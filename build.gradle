@@ -12,6 +12,10 @@ plugins {
     id 'application'
 }
 
+
+compileJava.options.fork = true
+compileJava.options.forkOptions.executable = 'C:\\Users\\jorge\\.jdks\\corretto-11.0.10'
+
 repositories {
     // Use jcenter for resolving dependencies.
     // You can declare any Maven/Ivy/file repository here.
